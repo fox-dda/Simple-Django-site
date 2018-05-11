@@ -1,0 +1,14 @@
+﻿{% extends "viewNV08C/wrapper.html" %}
+
+{% block content %}
+    <p2><b>NV08C Data:</b></p2>
+    {% for val in object_list %}
+        {% if val.status is None %}
+            <p>Time: {{val.time}}</p>
+            <p>Coordinates: {{val.coordinate}}</p>
+            <p>Date: {{val.date}}</p>
+            <p>Satellites count: {{val.satellitesCount}}</p>      
+            <p>Status: {{val.dataFlag}}</p>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

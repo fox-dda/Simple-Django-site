@@ -1,0 +1,8 @@
+﻿{% extends "viewNV08C/wrapper.html" %}
+
+{% block content %}
+    <p2><b>Driver Data:</b></p2>
+    <p>Status: {% for val in object_list %}{{val.status}}{% endfor %}</p>
+{% endblock %}
+    
+    

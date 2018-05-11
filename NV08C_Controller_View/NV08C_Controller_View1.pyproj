@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{239b1b7c-fa64-4d4a-b23a-fdafd4474f73}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>MSBuild|NV08C_Controller_View|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="NV08C_Controller\NV08C\settings.ini" />
+    <Content Include="NV08C_Controller\NV08C\viewNV08C\static\css\bootstrap-grid.css" />
+    <Content Include="NV08C_Controller\NV08C\viewNV08C\static\css\bootstrap-grid.min.css" />
+    <Content Include="NV08C_Controller\NV08C\viewNV08C\static\css\bootstrap-reboot.css" />
+    <Content Include="NV08C_Controller\NV08C\viewNV08C\static\css\bootstrap-reboot.min.css" />
+    <Content Include="NV08C_Controller\NV08C\viewNV08C\static\css\bootstrap.css" />
+    <Content Include="NV08C_Controller\NV08C\viewNV08C\static\css\bootstrap.min.css" />
+    <Content Include="NV08C_Controller\NV08C\viewNV08C\static\js\bootstrap.bundle.js" />
+    <Content Include="NV08C_Controller\NV08C\viewNV08C\static\js\bootstrap.bundle.min.js" />
+    <Content Include="NV08C_Controller\NV08C\viewNV08C\static\js\bootstrap.js" />
+    <Content Include="NV08C_Controller\NV08C\viewNV08C\static\js\bootstrap.min.js" />
+    <Content Include="NV08C_Controller\NV08C\viewNV08C\templates\viewNV08C\db.html" />
+    <Content Include="NV08C_Controller\NV08C\viewNV08C\templates\viewNV08C\driver.html" />
+    <Content Include="NV08C_Controller\NV08C\viewNV08C\templates\viewNV08C\homePage.html" />
+    <Content Include="NV08C_Controller\NV08C\viewNV08C\templates\viewNV08C\wrapper.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NV08C_Controller\NV08C\dbTest.py" />
+    <Compile Include="NV08C_Controller\NV08C\driver.py" />
+    <Compile Include="NV08C_Controller\NV08C\gnssLogic.py" />
+    <Compile Include="NV08C_Controller\NV08C\main.py" />
+    <Compile Include="NV08C_Controller\NV08C\manage.py" />
+    <Compile Include="NV08C_Controller\NV08C\models.py" />
+    <Compile Include="NV08C_Controller\NV08C\portWork.py" />
+    <Compile Include="NV08C_Controller\NV08C\viewNV08C\admin.py" />
+    <Compile Include="NV08C_Controller\NV08C\viewNV08C\apps.py" />
+    <Compile Include="NV08C_Controller\NV08C\viewNV08C\migrations\0001_initial.py" />
+    <Compile Include="NV08C_Controller\NV08C\viewNV08C\migrations\0002_driverstatus.py" />
+    <Compile Include="NV08C_Controller\NV08C\viewNV08C\migrations\0003_gnssdata_dataflag.py" />
+    <Compile Include="NV08C_Controller\NV08C\viewNV08C\migrations\__init__.py" />
+    <Compile Include="NV08C_Controller\NV08C\viewNV08C\models.py" />
+    <Compile Include="NV08C_Controller\NV08C\viewNV08C\tests.py" />
+    <Compile Include="NV08C_Controller\NV08C\viewNV08C\urls.py" />
+    <Compile Include="NV08C_Controller\NV08C\viewNV08C\views.py" />
+    <Compile Include="NV08C_Controller\NV08C\viewNV08C\__init__.py" />
+    <Compile Include="NV08C_Controller\NV08C\view\settings.py" />
+    <Compile Include="NV08C_Controller\NV08C\view\urls.py" />
+    <Compile Include="NV08C_Controller\NV08C\view\wsgi.py" />
+    <Compile Include="NV08C_Controller\NV08C\view\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NV08C_Controller\" />
+    <Folder Include="NV08C_Controller\NV08C" />
+    <Folder Include="NV08C_Controller\NV08C\view" />
+    <Folder Include="NV08C_Controller\NV08C\viewNV08C" />
+    <Folder Include="NV08C_Controller\NV08C\viewNV08C\migrations" />
+    <Folder Include="NV08C_Controller\NV08C\viewNV08C\static\" />
+    <Folder Include="NV08C_Controller\NV08C\viewNV08C\static\css" />
+    <Folder Include="NV08C_Controller\NV08C\viewNV08C\static\js" />
+    <Folder Include="NV08C_Controller\NV08C\viewNV08C\templates\" />
+    <Folder Include="NV08C_Controller\NV08C\viewNV08C\templates\viewNV08C" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="NV08C_Controller\venv\">
+      <Id>NV08C_Controller_View</Id>
+      <Description>venv (Python 3.5 (32-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <Version>3.5</Version>
+      <Architecture>X86</Architecture>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
